@@ -25,11 +25,19 @@ public class PhoneNumberReader {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
-
-                System.out.println(line);
+                if (isValidPhoneNumber(line)) {
+                    System.out.println(line);
+                } else {
+                    System.out.println("Xato formatdagi raqam: " + line);
+                }
             }
         } catch (IOException e) {
             System.out.println("Faylni o'qishda xatolik: " + e.getMessage());
         }
     }
+
+    public static boolean isValidPhoneNumber(String phoneNumber) {
+        return phoneNumber.matches("\\+998\\d{2}\\d{7}");
+    }
 }
+
