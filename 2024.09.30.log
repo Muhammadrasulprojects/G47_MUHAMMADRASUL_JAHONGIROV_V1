@@ -1,0 +1,7 @@
+2024-09-30 21:05:37 INFO [exam.forthTask.CustomFileLogger] Bu 'INFO' darajadagi log.
+2024-09-30 21:05:37 WARNING [exam.forthTask.CustomFileLogger] Bu 'WARNING' darajadagi log.
+2024-09-30 21:05:37 SEVERE [exam.forthTask.CustomFileLogger] Bu 'SEVERE' darajadagi log.
+2024-09-30 21:05:37 SEVERE [exam.forthTask.CustomFileLogger] Exception example
+java.lang.Exception: Test exception
+	at exam.forthTask.CustomFileLogger.main(CustomFileLogger.java:38)
+
